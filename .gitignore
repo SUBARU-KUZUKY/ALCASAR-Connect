@@ -1,0 +1,7 @@
+config.json
+AutoLogin.log
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
