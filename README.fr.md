@@ -1,55 +1,26 @@
 # ALCASAR Connect 🇫🇷
 
-**by Subaru-Kuzuky** · Windows 10/11 · PowerShell 5.1 · Open source
+**by Subaru-Kuzuky** · Windows 10/11 · PowerShell 5.1 · Licence MIT
 
-[English](README.en.md) | [Accueil / Home](README.md)
+[English](README.en.md) | [Accueil](README.md)
 
 ## Présentation
+Logiciel Windows non officiel pour se connecter automatiquement aux portails captifs ALCASAR / CoovaChilli sur un réseau autorisé. Interface graphique sombre, Wi-Fi configurable, identifiants modifiables, test manuel, automatisation silencieuse et journal de connexion.
 
-**ALCASAR Connect** est un outil non officiel pour Windows qui automatise la connexion à un portail captif **ALCASAR / CoovaChilli** sur un réseau auquel vous êtes autorisé à accéder.
+## Installation et test
+La documentation est publiée, mais les sources complètes et la Release téléchargeable **ne sont pas encore sur GitHub**. En attendant, le pack de test peut être utilisé localement.
 
-L'application propose une interface sombre, un SSID Wi-Fi configurable, des champs d'identifiant et de mot de passe, un bouton de test, un journal d'activité et une tâche planifiée qui vérifie périodiquement la connectivité.
+1. Extraire le pack complet.
+2. Lancer `INSTALLER.cmd` sur Windows.
+3. Entrer le SSID et **ses propres identifiants** dans l'interface ; cliquer sur **Enregistrer**.
+4. Tester la connexion et consulter le journal avec **Actualiser**.
 
-## Fonctionnalités
+Le dossier d'installation prévu est `%LOCALAPPDATA%\ALCASAR-AutoLogin`. La tâche automatique peut contrôler la connexion toutes les deux minutes.
 
-- Interface graphique sous Windows
-- Paramétrage du réseau Wi-Fi (SSID), de l'identifiant et du mot de passe
-- Test manuel de l'authentification
-- Vérification automatique en arrière-plan à l'ouverture de session et toutes les deux minutes
-- Journal de diagnostic
-- Raccourcis Bureau et menu Démarrer
+## Sécurité
+Ne jamais publier `config.json`, les mots de passe ou des journaux contenant des données sensibles. Le moteur utilise actuellement des requêtes avec désactivation de la vérification des certificats TLS locaux : uniquement sur un réseau de confiance, en attendant que l'administrateur corrige les certificats. Logiciel non officiel, compatibilité variable selon les portails, et à utiliser uniquement avec autorisation.
 
-## Installation
+## Crédits
+**Développé par Subaru-Kuzuky** · Assistance technique : **OpenAI**.
 
-> **État du dépôt :** la documentation et un exemple de configuration sont publiés, mais les **sources complètes de l'application doivent encore être importées**. Il n'y a pas encore de Release GitHub vérifiée pour une installation directe.
-
-Une fois le pack complet disponible :
-
-1. Télécharger l'archive de la version publiée et l'extraire entièrement.
-2. Exécuter `INSTALLER.cmd` sur Windows.
-3. Ouvrir **ALCASAR Connect** et saisir ses **propres identifiants** et le SSID du réseau.
-4. Cliquer sur **Enregistrer**, puis sur **Tester maintenant**.
-5. Examiner le journal avec **Actualiser** pour vérifier le résultat.
-
-L'installation prévue utilise le dossier `%LOCALAPPDATA%\ALCASAR-AutoLogin`.
-
-## Sécurité et confidentialité
-
-- **Ne publiez jamais `config.json`**, qui peut contenir un mot de passe en clair.
-- Utilisez le fichier `config.example.json` comme exemple uniquement.
-- Les journaux peuvent contenir des renseignements sur votre réseau ; relisez-les avant de les partager.
-- Certaines configurations du moteur historique désactivent la vérification TLS pour le portail local. Ce n'est pas recommandé sur un réseau non fiable : demandez à l'administrateur de renouveler les certificats expirés.
-- L'application ne doit pas servir à contourner les restrictions d'un réseau ni à se connecter sans autorisation.
-- Compatibilité variable selon les versions et configurations du portail ALCASAR.
-
-## Développement et contribution
-
-Les contributions, corrections et propositions d'amélioration sont les bienvenues après publication des sources. Pour signaler un dysfonctionnement, précisez la version du logiciel, la version de Windows et les messages de diagnostic, **sans divulguer de mot de passe**.
-
-## Crédits et licence
-
-**Auteur : Subaru-Kuzuky**
-
-Assistance au développement : OpenAI ChatGPT.
-
-Projet indépendant, non affilié à l'équipe officielle d'ALCASAR. Licence [MIT](LICENSE).
+Licence [MIT](LICENSE). Contributions bienvenues une fois les sources publiées.
