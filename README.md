@@ -1,30 +1,30 @@
 # ALCASAR Connect
 
-**by Subaru-Kuzuky** · Windows 10/11 · PowerShell 5.1 · Open source
+**by Subaru-Kuzuky** · Windows 10/11 · PowerShell · MIT License
 
-Application graphique de connexion automatique aux portails captifs ALCASAR (CoovaChilli). Interface sombre, configuration du Wi-Fi (SSID), de l'identifiant et du mot de passe, bouton de test, journal d'activité et automatisation silencieuse via le Planificateur de tâches Windows.
+🌐 **Choose your language / Choisissez votre langue :**
 
-## Installation
+- 🇫🇷 **[Documentation en français](README.fr.md)**
+- 🇬🇧 **[English documentation](README.en.md)**
 
-1. Télécharger le pack de la version 1.2 et extraire tout son contenu.
-2. Exécuter `INSTALLER.cmd`.
-3. Dans **ALCASAR Connect**, renseigner son propre SSID, identifiant et mot de passe, puis cliquer **Enregistrer**.
-4. Utiliser **Tester maintenant** puis **Actualiser** pour lire le résultat.
+---
 
-L'application s'installe sous `%LOCALAPPDATA%\ALCASAR-AutoLogin`. Le moteur s'exécute au démarrage de session et vérifie l'accès toutes les deux minutes.
+### 🇫🇷 Présentation
 
-## Sécurité
+ALCASAR Connect est un utilitaire Windows non officiel permettant d'automatiser l'authentification aux portails captifs ALCASAR / CoovaChilli. Il inclut une interface graphique sombre, le choix du Wi-Fi, la configuration des identifiants, un test manuel, une automatisation silencieuse et des journaux.
 
-**Ne jamais publier `config.json`**, qui contient localement les identifiants, y compris le mot de passe en clair. Seul `config.example.json` doit être versionné. Les journaux peuvent également contenir des détails réseau. Le programme emploie un contournement de validation TLS pour des portails locaux : utiliser uniquement sur un réseau de confiance et demander à son administrateur de renouveler les certificats expirés.
+**Statut :** la documentation est disponible ; les scripts complets et une Release installable restent à publier.
 
-L'application n'est **pas officielle** et n'est pas compatible avec toutes les variantes ALCASAR. Ne l'utiliser que sur les réseaux auxquels vous êtes autorisé à vous connecter.
+### 🇬🇧 Overview
 
-## Sources
+ALCASAR Connect is an unofficial Windows utility for automating authentication to ALCASAR / CoovaChilli captive portals. Features include a dark GUI, configurable Wi-Fi and credentials, manual testing, silent background automation and logs.
 
-Le pack 1.2 comprend `AutoLogin.ps1`, `Interface.ps1`, `Installer.ps1`, les lanceurs CMD/VBS et les icônes ICO/PNG. **Les sources complètes restent à importer dans ce dépôt.**
+**Status:** documentation is available; the complete application scripts and an installable Release have not yet been published.
 
-## Crédits
+---
 
-Auteur : **Subaru-Kuzuky**. Assistance au développement : OpenAI ChatGPT.
+⚠️ **Sécurité / Security:** Do not upload `config.json` containing credentials. Never publish passwords. Use this application only on networks you are authorized to access.
 
-Licence MIT — voir `LICENSE`.
+**Auteur / Author:** Subaru-Kuzuky · Development assistance: OpenAI ChatGPT.
+
+[Licence MIT / MIT License](LICENSE)
