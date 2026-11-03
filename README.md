@@ -1,30 +1,20 @@
 # ALCASAR Connect
 
-**by Subaru-Kuzuky** · Windows 10/11 · PowerShell · MIT License
+**by Subaru-Kuzuky** · Windows 10/11 · PowerShell · MIT
 
-🌐 **Choose your language / Choisissez votre langue :**
-
-- 🇫🇷 **[Documentation en français](README.fr.md)**
-- 🇬🇧 **[English documentation](README.en.md)**
-
----
+🇫🇷 [Français](README.fr.md) · 🇬🇧 [English](README.en.md)
 
 ### 🇫🇷 Présentation
-
-ALCASAR Connect est un utilitaire Windows non officiel permettant d'automatiser l'authentification aux portails captifs ALCASAR / CoovaChilli. Il inclut une interface graphique sombre, le choix du Wi-Fi, la configuration des identifiants, un test manuel, une automatisation silencieuse et des journaux.
-
-**Statut :** la documentation est disponible ; les scripts complets et une Release installable restent à publier.
+Connexion automatique aux portails captifs ALCASAR sur Windows : interface graphique, Wi-Fi configurable, automatisation silencieuse et journal d'activité.
 
 ### 🇬🇧 Overview
+Automatic ALCASAR captive portal login for Windows: graphical interface, configurable Wi-Fi, silent automation and activity logs.
 
-ALCASAR Connect is an unofficial Windows utility for automating authentication to ALCASAR / CoovaChilli captive portals. Features include a dark GUI, configurable Wi-Fi and credentials, manual testing, silent background automation and logs.
+**Publication / Release :** documentation en ligne ; les sources et l'archive installable restent à publier sur GitHub. / Documentation is online; application sources and installable release are not yet uploaded to GitHub.
 
-**Status:** documentation is available; the complete application scripts and an installable Release have not yet been published.
+**Développé par / Developed by:** Subaru-Kuzuky  
+**Assistance technique / Technical assistance:** OpenAI
 
----
+⚠️ Ne publiez jamais vos identifiants ou `config.json`. / Never publish credentials or `config.json`.
 
-⚠️ **Sécurité / Security:** Do not upload `config.json` containing credentials. Never publish passwords. Use this application only on networks you are authorized to access.
-
-**Auteur / Author:** Subaru-Kuzuky · Development assistance: OpenAI ChatGPT.
-
-[Licence MIT / MIT License](LICENSE)
+[MIT License](LICENSE)
